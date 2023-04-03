@@ -5,9 +5,11 @@ import { auth, storage, db } from "../Firebase";
 import { doc, setDoc } from "firebase/firestore";
 
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [err, setErr] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -38,8 +40,9 @@ const Register = () => {
             });
 
             await setDoc(doc(db, "userChats", res.user.uid), {});
+
+            navigate("/");
           } catch (err) {
-            console.log(err);
             setErr(true);
           }
         });
@@ -65,7 +68,9 @@ const Register = () => {
           <button>Sign Up</button>
           {err && <span>Somthig went wrong...</span>}
         </form>
-        <p>You do have an accoount? Login</p>
+        <p>
+          You do have an accoount? <Link to="/login">Login</Link>
+        </p>
       </div>
     </div>
   );
