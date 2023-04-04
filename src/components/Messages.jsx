@@ -27,7 +27,7 @@ const Messages = () => {
       ) : (
         <p className="no_msg">
           <h1>
-            JHY Chat <RiWechatFill style={{ color: "#2f2d52" }} />
+            Saleh Chat <RiWechatFill style={{ color: "#2f2d52" }} />
           </h1>
           <h3>Thanks for checking out this application.</h3>
           <p>Search for users, Select user and start your chat.</p>
