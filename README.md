@@ -8,7 +8,7 @@ Thanks for checking out this Application.
 ### Links
 
 - Solution URL: [Github](https://github.com/AhmadSaleh99)
-- Live Site URL: [Live Site](https://resilient-begonia-948d46.netlify.app)
+- Live Site URL: [Live Site](https://celadon-mandazi-a920d0.netlify.app)
 
 ## My process
 
